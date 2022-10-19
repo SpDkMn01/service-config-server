@@ -1,0 +1,14 @@
+spring:
+  application:
+    name=service-config
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          default-label: main
+          uri: https://github.com/SpDkMn01/service-repository-server.git
+      health:
+        enabled: true
+server:
+  port: 9080
